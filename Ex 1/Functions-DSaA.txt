@@ -1,0 +1,65 @@
+// DRAW TRIANGLE -------------------------------------------------------------------------------------------------------------------------------------
+void drawTriangle(int size) {
+	for (int i = 1; i < size; i++) {
+		cout << sign << endl;
+		for (int j = 1; j <= i; j++) {
+			cout << sign;
+		}
+	}
+	cout << sign;
+	cout << endl;
+}
+// DRAW SQUARE -------------------------------------------------------------------------------------------------------------------------------------
+void drawSquare(int size) {
+
+	for (int i = 0; i<size; i++) {
+		cout << sign;
+	}
+	cout << endl;
+	for (int j = 0; j<size - 2; j++) {
+		cout << sign;
+		for (int m = 0; m<size - 2; m++) {
+			cout << " ";
+		}
+		cout << sign << endl;
+
+	}
+	for (int g = 0; g<size; g++) {
+		cout << sign;
+	}
+	cout << endl;
+
+}
+// DRAW PYRAMID -------------------------------------------------------------------------------------------------------------------------------------
+void drawPyramid(int size) {
+	for (int m = 1; m <= size; m++) {
+
+		for (int i = 0; i < size - m; i++) {
+			cout << " ";
+
+		}
+		for (int j = 0; j < m * 2 - 1; j++) {
+			cout << sign;
+		}
+		cout << endl;
+	}
+
+}
+// DRAW CHRISTMAS TREE -------------------------------------------------------------------------------------------------------------------------------------
+void drawChristmasTree(int size) {
+	int b = size;
+	for (int a = 0; a < size; a++) {
+		b--;
+		for (int m = 1; m <= size - b; m++) {
+			for (int i = 0; i < size - m; i++) {
+				cout << " ";
+
+			}
+			for (int j = 0; j < m * 2 - 1; j++) {
+				cout << sign;
+			}
+			cout << endl;
+		}
+	}
+
+}
